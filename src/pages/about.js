@@ -75,7 +75,7 @@ export default function About() {
                                         <a className={styles.link} target="_blank" rel="noopener noreferrer" href="https://www.yearzerostudios.com/">
                                             Year Zero Studios
                                         </a>
-                                    </strong>, working with <strong>typescript, React Hooks and firebase</strong>!
+                                    </strong>, working with <strong>Typescript, React Hooks and Firebase</strong>!
                                     <br />
                                     <br />
                                     In my free time, you can find me hiking, playing various sports and discovering new restaurants and clothing stores!
