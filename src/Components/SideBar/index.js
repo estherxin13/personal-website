@@ -1,29 +1,43 @@
+import { makeStyles } from '@material-ui/core';
 import React from 'react'
-import {SidebarContainer, Icon, CloseIcon, SideBarWrapper, SideBarMenu, SideBarLink  } from  './SideBarElements'
+import { Link } from 'react-router-dom';
+import { SidebarContainer, Icon, CloseIcon, SideBarWrapper, SideBarMenu, SideBarLink } from './SideBarElements'
 
-const SideBar = ({isOpen, toggle}) => {
+const useStyles = makeStyles({
+    link: {
+        textDecoration: 'none',
+        color: 'black'
+    },
+});
+
+const SideBar = ({ isOpen, toggle }) => {
+    const styles = useStyles();
+
     return (
         <>
-            <SidebarContainer isOpen = {isOpen} onClick = {toggle}>
-            <Icon onClick = {toggle}>
-                <CloseIcon />
-            </Icon>
-            <SideBarWrapper>
-                <SideBarMenu>
-                    <SideBarLink>
-                        home 
+            <SidebarContainer isOpen={isOpen} onClick={toggle}>
+                <Icon onClick={toggle}>
+                    <CloseIcon />
+                </Icon>
+                <SideBarWrapper>
+                    <SideBarMenu>
+                        <SideBarLink onClick={toggle}>
+                            <Link className={styles.link} to={'/about'}>about</Link>
+                        </SideBarLink>
+                        <SideBarLink onClick={toggle}>
+                            about
                     </SideBarLink>
-                    <SideBarLink>
-                        about
+                        <SideBarLink onClick={toggle}>
+                            project
                     </SideBarLink>
-                    <SideBarLink>
-                        project
+                        <SideBarLink onClick={toggle}>
+                            community
                     </SideBarLink>
-                    <SideBarLink>
-                        community
+                        <SideBarLink onClick={toggle}>
+                            resume
                     </SideBarLink>
-            </SideBarMenu>
-            </SideBarWrapper>
+                    </SideBarMenu>
+                </SideBarWrapper>
             </SidebarContainer>
         </>
     )

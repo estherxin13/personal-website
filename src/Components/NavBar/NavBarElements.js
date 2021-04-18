@@ -79,7 +79,7 @@ padding: 0 3rem;
 height: 100%; 
 cursor: pointer; 
 
-&.active {
+&.hover {
     border-bottom: 3px solid black; 
 }
 `; 
