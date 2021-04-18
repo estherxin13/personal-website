@@ -6,14 +6,16 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 const useStyles = makeStyles(theme => ({
     card: {
         textAlign: 'center',
-        backgroundColor: '#EBE0E0',
         marginBottom: theme.spacing(6),
-        borderRadius: 5,
+        borderRadius: 7,
+        boxShadow: '0px 4px 9px 4px rgba(212,212,212)',
+        '&:hover': {
+            boxShadow: '0px 4px 9px 4px rgba(208, 139, 127, 0.4)',
+          },
     },
     expand: {
         transform: 'rotate(0deg)',
         marginLeft: 'auto',
-        // color: 'white',
         transition: theme.transitions.create('transform', {
             duration: theme.transitions.duration.shortest,
         }),
@@ -23,12 +25,11 @@ const useStyles = makeStyles(theme => ({
     },
     text: {
         fontSize: 20,
-        // color: 'white'
     },
     imageLogin: {
         width: 490,
-        // border: '2px solid black',
-        borderRadius: 10,
+        border: '2px solid black',
+        borderRadius: 7,
         marginBottom: theme.spacing(5),
         [theme.breakpoints.down('md')]: {
             display: 'none'

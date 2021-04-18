@@ -36,10 +36,10 @@ export default function Project() {
                 <Grid xs container>
                     <Grid item xs={12} md={6}>
                         <div>
+
                             <div className={styles.cardLeft}>
                                 <Wellify />
                                 <Nasa />
-
                             </div>
 
                         </div>

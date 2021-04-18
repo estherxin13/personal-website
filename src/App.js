@@ -4,9 +4,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Community from './pages/community';
 import NavImport from './Components/NavBar/navImport';
-
-
-
+import { Footer } from './Components/footer';
 
 function App() {
   return (
@@ -15,6 +13,7 @@ function App() {
       <Route path="/about" component={About} />
       <Route path="/community" component={Community} />
       <Route exact path="/" component={Home} />
+      <Footer />
     </BrowserRouter>
   );
 

@@ -6,7 +6,7 @@ import { SidebarContainer, Icon, CloseIcon, SideBarWrapper, SideBarMenu, SideBar
 const useStyles = makeStyles({
     link: {
         textDecoration: 'none',
-        color: 'black'
+        color: 'black',
     },
 });
 
@@ -22,20 +22,22 @@ const SideBar = ({ isOpen, toggle }) => {
                 <SideBarWrapper>
                     <SideBarMenu>
                         <SideBarLink onClick={toggle}>
+                            <Link className={styles.link} to={'/about'}>home</Link>
+                        </SideBarLink>
+                        <SideBarLink onClick={toggle}>
                             <Link className={styles.link} to={'/about'}>about</Link>
                         </SideBarLink>
                         <SideBarLink onClick={toggle}>
-                            about
-                    </SideBarLink>
+                            <Link className={styles.link} to={'/'}>projects</Link>
+                        </SideBarLink>
                         <SideBarLink onClick={toggle}>
-                            project
-                    </SideBarLink>
-                        <SideBarLink onClick={toggle}>
-                            community
-                    </SideBarLink>
-                        <SideBarLink onClick={toggle}>
-                            resume
-                    </SideBarLink>
+                            <Link className={styles.link} to={'/community'}>community</Link>
+                        </SideBarLink>
+                        <SideBarLink>
+                            <a className={styles.link} href="https://drive.google.com/file/d/10wj7lyNlm4WQBz9slUk7fSmh5gKmlNeh/view?usp=sharing" target="_blank" rel="noreferrer">
+                                resume
+                            </a>
+                        </SideBarLink>
                     </SideBarMenu>
                 </SideBarWrapper>
             </SidebarContainer>

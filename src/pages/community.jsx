@@ -10,7 +10,7 @@ export default function Community() {
 
     return (
         <main>
-            community
+            community | to be done
         </main>
     );
 }

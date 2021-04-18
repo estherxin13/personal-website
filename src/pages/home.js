@@ -63,15 +63,6 @@ const Home = () => {
                     ]}
                 />
             </div>
-            {/* <div className={classes.project}>
-                <div className={classes.arrow}>
-                    check out my work below
-
-                    <IconButton>
-                        <ExpandMoreIcon className={classes.color} fontSize="large" />
-                    </IconButton>
-                </div>
-            </div> */}
             <Project />
         </>
     )
