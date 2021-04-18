@@ -1,13 +1,14 @@
 import React from 'react'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItems, NavLinks } from './NavBarElements'
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItems, Items } from './NavBarElements'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core';
 
+
 const useStyles = makeStyles({
     link: {
         textDecoration: 'none',
-        color: 'black'
+        color: 'black',
     },
 });
 
@@ -26,18 +27,22 @@ const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItems>
-                            <NavLinks>
+                            <Items>
                                 <Link className={styles.link} to={'/about'}>about</Link>
-                            </NavLinks>
+                            </Items>
                         </NavItems>
                         <NavItems>
-                            <NavLinks to='/about'>projects</NavLinks>
+                            <Items>projects</Items>
                         </NavItems>
                         <NavItems>
-                            <NavLinks to='about'>community</NavLinks>
+                            <Items>
+                                <Link className={styles.link} to={'/community'}>community</Link>
+                            </Items>
                         </NavItems>
                         <NavItems>
-                            <NavLinks to='about'>resume</NavLinks>
+                            <a className={styles.link} href="https://drive.google.com/file/d/10wj7lyNlm4WQBz9slUk7fSmh5gKmlNeh/view?usp=sharing" target="_blank" rel="noreferrer">
+                                <Items>resume</Items>
+                            </a>
                         </NavItems>
                     </NavMenu>
                 </NavbarContainer>

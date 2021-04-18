@@ -10,31 +10,31 @@ const Home = () => {
 
         quotes: {
             fontSize: 20,
-            textAlign: 'center',
+            marginLeft: theme.spacing(8),
+            marginBottom: theme.spacing(10),
             [theme.breakpoints.up('md')]: {
-                fontSize: 30,
+                fontSize: 25,
             },
         },
         color: {
             color: '#c97777'
         },
         title: {
-            fontSize: 45,
-            textAlign: 'center',
+            fontSize: 30,
             margin: theme.spacing(3),
-            marginTop: theme.spacing(25),
+            marginLeft: theme.spacing(8),
+            marginTop: theme.spacing(15),
             [theme.breakpoints.up('md')]: {
-                fontSize: 65,
+                fontSize: 50,
             },
         },
         arrow: {
-            margin: theme.spacing(3),
-            marginTop: theme.spacing(15),
-            textAlign: 'center',
+            margin: theme.spacing(6),
+            marginTop: theme.spacing(8),
             [theme.breakpoints.up('md')]: {
-            marginTop: theme.spacing(32),
+                marginTop: theme.spacing(15),
             },
-        }
+        },
     }));
 
     const classes = useStyles();
@@ -43,8 +43,8 @@ const Home = () => {
     return (
         <>
             <div className={classes.title}>
-               <strong>hi there, nice to meet you !</strong> 
-                </div>
+                <strong>hi there, nice to meet you !</strong>
+            </div>
             <div className={classes.quotes}>
                 I am &nbsp;
                 <Typical
@@ -65,14 +65,15 @@ const Home = () => {
                     ]}
                 />
             </div>
-            <div className={classes.arrow}>
+            {/* <div className={classes.project}>
                 <div className={classes.arrow}>
-                    see my work below
+                    check out my work below
+
+                    <IconButton>
+                        <ExpandMoreIcon className={classes.color} fontSize="large" />
+                    </IconButton>
                 </div>
-                <IconButton>
-                    <ExpandMoreIcon className={classes.color} fontSize="large" />
-                </IconButton>
-            </div>
+            </div> */}
             <Project />
         </>
     )
