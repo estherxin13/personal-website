@@ -1,6 +1,5 @@
 import React from 'react';
-import { Grid, IconButton, makeStyles, Typography } from '@material-ui/core';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import { Grid, makeStyles } from '@material-ui/core';
 import Wellify from '../Components/wellify';
 import Nasa from '../Components/nasa';
 import RBC from './rbc';
@@ -11,16 +10,16 @@ import PersonalSite from './personalWebsite';
 const useStyles = makeStyles(theme => ({
 
     cardLeft: {
-        marginRight: theme.spacing(6),
-        marginLeft: theme.spacing(6),
+        marginRight: theme.spacing(3),
+        marginLeft: theme.spacing(3),
         [theme.breakpoints.up('md')]: {
             marginRight: theme.spacing(3),
             marginLeft: theme.spacing(6),
         }
     },
     cardRight: {
-        marginRight: theme.spacing(6),
-        marginLeft: theme.spacing(6),
+        marginRight: theme.spacing(3),
+        marginLeft: theme.spacing(3),
         [theme.breakpoints.up('md')]: {
             marginRight: theme.spacing(6),
             marginLeft: theme.spacing(3),

@@ -1,20 +1,19 @@
 import React from 'react';
 import { Card, CardActions, CardContent, Collapse, IconButton, makeStyles, Typography } from '@material-ui/core';
-import GitHubIcon from '@material-ui/icons/GitHub';
 import clsx from 'clsx';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles(theme => ({
     card: {
         textAlign: 'center',
-        backgroundColor: 'black',
+        backgroundColor: '#EBE0E0',
         marginBottom: theme.spacing(6),
         borderRadius: 5,
     },
     expand: {
         transform: 'rotate(0deg)',
         marginLeft: 'auto',
-        color: 'white',
+        // color: 'white',
         transition: theme.transitions.create('transform', {
             duration: theme.transitions.duration.shortest,
         }),
@@ -24,11 +23,11 @@ const useStyles = makeStyles(theme => ({
     },
     text: {
         fontSize: 20,
-        color: 'white'
+        // color: 'white'
     },
     imageLogin: {
         width: 488,
-        border: '2px solid black',
+        // border: '2px solid black',
         borderRadius: 10,
         marginBottom: theme.spacing(5),
         [theme.breakpoints.down('md')]: {
@@ -56,7 +55,7 @@ export default function Wellify() {
             <CardContent className={styles.cardContent}>
                 <img className={styles.imageLogin} alt="logo" src="/wellify.png" />
                 <div className={styles.text}>
-                    <strong>Software developer</strong>  |  Internship @ Year Zero Studios
+                    <strong>Software developer</strong>  |  Year Zero Studios
                     </div>
             </CardContent>
             <CardActions disableSpacing>
