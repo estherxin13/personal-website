@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/estherxin13.github.io/static/css/main.2e736676.chunk.css",
-    "main.js": "/estherxin13.github.io/static/js/main.729e9747.chunk.js",
-    "main.js.map": "/estherxin13.github.io/static/js/main.729e9747.chunk.js.map",
-    "runtime-main.js": "/estherxin13.github.io/static/js/runtime-main.2b80e378.js",
-    "runtime-main.js.map": "/estherxin13.github.io/static/js/runtime-main.2b80e378.js.map",
-    "static/js/2.1f847f0a.chunk.js": "/estherxin13.github.io/static/js/2.1f847f0a.chunk.js",
-    "static/js/2.1f847f0a.chunk.js.map": "/estherxin13.github.io/static/js/2.1f847f0a.chunk.js.map",
-    "static/js/3.96000cd3.chunk.js": "/estherxin13.github.io/static/js/3.96000cd3.chunk.js",
-    "static/js/3.96000cd3.chunk.js.map": "/estherxin13.github.io/static/js/3.96000cd3.chunk.js.map",
-    "index.html": "/estherxin13.github.io/index.html",
-    "static/css/main.2e736676.chunk.css.map": "/estherxin13.github.io/static/css/main.2e736676.chunk.css.map",
-    "static/js/2.1f847f0a.chunk.js.LICENSE.txt": "/estherxin13.github.io/static/js/2.1f847f0a.chunk.js.LICENSE.txt"
+    "main.css": "/personal-website/static/css/main.2e736676.chunk.css",
+    "main.js": "/personal-website/static/js/main.729e9747.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.729e9747.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.5eccd182.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.5eccd182.js.map",
+    "static/js/2.ac548eed.chunk.js": "/personal-website/static/js/2.ac548eed.chunk.js",
+    "static/js/2.ac548eed.chunk.js.map": "/personal-website/static/js/2.ac548eed.chunk.js.map",
+    "static/js/3.96000cd3.chunk.js": "/personal-website/static/js/3.96000cd3.chunk.js",
+    "static/js/3.96000cd3.chunk.js.map": "/personal-website/static/js/3.96000cd3.chunk.js.map",
+    "index.html": "/personal-website/index.html",
+    "static/css/main.2e736676.chunk.css.map": "/personal-website/static/css/main.2e736676.chunk.css.map",
+    "static/js/2.ac548eed.chunk.js.LICENSE.txt": "/personal-website/static/js/2.ac548eed.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2b80e378.js",
-    "static/js/2.1f847f0a.chunk.js",
+    "static/js/runtime-main.5eccd182.js",
+    "static/js/2.ac548eed.chunk.js",
     "static/css/main.2e736676.chunk.css",
     "static/js/main.729e9747.chunk.js"
   ]
