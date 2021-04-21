@@ -11,11 +11,12 @@ const useStyles = makeStyles(theme => ({
         boxShadow: '0px 4px 9px 4px rgba(212,212,212)',
         '&:hover': {
             boxShadow: '0px 4px 9px 4px rgba(208, 139, 127, 0.4)',
+            cursor: 'pointer',
           },
     },
     expand: {
         transform: 'rotate(0deg)',
-        marginLeft: 'auto',
+        margin: 'auto',
         transition: theme.transitions.create('transform', {
             duration: theme.transitions.duration.shortest,
         }),
@@ -24,13 +25,13 @@ const useStyles = makeStyles(theme => ({
         transform: 'rotate(180deg)',
     },
     text: {
-        fontSize: 20,
+        fontSize: 15,
     },
     imageLogin: {
         width: 488,
         border: '2px solid black',
         borderRadius: 7,
-        marginBottom: theme.spacing(5),
+        marginBottom: theme.spacing(1),
         [theme.breakpoints.down('md')]: {
             display: 'none'
         },
@@ -57,9 +58,9 @@ export default function Wellify() {
                 <img className={styles.imageLogin} alt="logo" src="/wellify.png" />
                 <div className={styles.text}>
                     <strong>Software developer</strong>  |  Year Zero Studios
-                    </div>
+                </div>
             </CardContent>
-            <CardActions disableSpacing>
+            <CardActions>
                 <IconButton
                     className={clsx(styles.expand, {
                         [styles.expandOpen]: expanded,
@@ -67,7 +68,7 @@ export default function Wellify() {
                     aria-expanded={expanded}
                     aria-label="show more"
                 >
-                    <ExpandMoreIcon />
+                    <ExpandMoreIcon fontSize='large'/>
                 </IconButton>
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
