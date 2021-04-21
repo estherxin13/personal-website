@@ -2,7 +2,7 @@
   "name": "personalwebsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://estherxin13.github.io/estherxin13.github.io",
+  "homepage": "http://estherxin13.github.io/personal-website",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
