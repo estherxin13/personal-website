@@ -8,8 +8,11 @@ const useStyles = makeStyles(theme => ({
         color: theme.palette.getContrastText(theme.palette.primary.main),
         backgroundColor: 'black',
         padding: theme.spacing(3),
-        paddingLeft: theme.spacing(7),
+        paddingLeft: theme.spacing(23),
         fontSize: 18,
+        [theme.breakpoints.down('md')]: {
+            paddingLeft: theme.spacing(8),
+        },
     },
     link: {
         textDecoration: 'none',

@@ -32,7 +32,9 @@ const Navbar = ({ toggle }) => {
                             </Items>
                         </NavItems>
                         <NavItems>
-                            <Items>projects</Items>
+                            <Items>
+                                <Link className={styles.link} to={'/'}>projects</Link>
+                            </Items>
                         </NavItems>
                         <NavItems>
                             <Items>

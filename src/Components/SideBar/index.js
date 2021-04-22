@@ -22,7 +22,7 @@ const SideBar = ({ isOpen, toggle }) => {
                 <SideBarWrapper>
                     <SideBarMenu>
                         <SideBarLink onClick={toggle}>
-                            <Link className={styles.link} to={'/about'}>home</Link>
+                            <Link className={styles.link} to={'/'}>home</Link>
                         </SideBarLink>
                         <SideBarLink onClick={toggle}>
                             <Link className={styles.link} to={'/about'}>about</Link>

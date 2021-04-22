@@ -19,9 +19,6 @@ import RBC from './rbc';
 
 
 const useStyles = makeStyles((theme) => ({
-  paper: {
-    padding: '6px 16px',
-  },
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,
   },
@@ -33,9 +30,16 @@ item:{
 timeline:{
     marginLeft: theme.spacing(20),
     marginRight: theme.spacing(20),
+    [theme.breakpoints.down('md')]: {
+        marginLeft: theme.spacing(2),
+        marginRight: theme.spacing(2),
+    },
 },
 padding:{
     marginRight: theme.spacing(10),
+    [theme.breakpoints.down('md')]: {
+        marginRight: theme.spacing(3),
+    },
 }
 }));
 
@@ -95,7 +99,7 @@ export default function Project2() {
         </TimelineSeparator>
         <TimelineOppositeContent>
         <Typography className ={classes.item} variant="body1" color="textSecondary">
-            October 
+            October 2019
           </Typography>
           <RBC />
         </TimelineOppositeContent>

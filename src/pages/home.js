@@ -8,10 +8,11 @@ const Home = () => {
 
         quotes: {
             fontSize: 20,
-            marginLeft: theme.spacing(8),
+            marginLeft: theme.spacing(5),
             marginBottom: theme.spacing(10),
             [theme.breakpoints.up('md')]: {
                 fontSize: 25,
+                marginLeft: theme.spacing(20),
             },
         },
         color: {
@@ -20,10 +21,12 @@ const Home = () => {
         title: {
             fontSize: 30,
             margin: theme.spacing(3),
-            marginLeft: theme.spacing(8),
-            marginTop: theme.spacing(15),
+            marginLeft: theme.spacing(5),
+            marginTop: theme.spacing(10),
             [theme.breakpoints.up('md')]: {
                 fontSize: 50,
+                marginTop: theme.spacing(15),
+                marginLeft: theme.spacing(20),
             },
         },
         arrow: {
