@@ -46,7 +46,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function About() {
+export function About() {
     const styles = useStyles();
 
     return (

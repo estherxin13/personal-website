@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardActions, CardContent, IconButton, makeStyles, Typography } from '@material-ui/core';
+import { Card, CardContent, IconButton, makeStyles, Typography } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import WebIcon from '@material-ui/icons/Web';
 
@@ -49,7 +49,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-export default function Wellify() {
+export function Wellify() {
     const styles = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 
