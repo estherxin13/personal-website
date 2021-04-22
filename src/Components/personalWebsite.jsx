@@ -46,11 +46,10 @@ const useStyles = makeStyles(theme => ({
     icon: {
         color: 'grey',
         textAlign: 'center',
-        // marginTop: theme.spacing(1),
     }
 }));
 
-export function Wellify() {
+export function PersonalSite() {
     const styles = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 

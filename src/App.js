@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom'
-import Home from './pages/home';
-import About from './pages/about';
-import Community from './pages/community';
+import  Home from './pages/home';
+import {About} from './pages/about';
+import { Community } from './pages/community';
 import NavImport from './Components/NavBar/navImport';
 import { Footer } from './Components/footer';
 

@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-export function Wellify() {
+export function Nasa() {
     const styles = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 
