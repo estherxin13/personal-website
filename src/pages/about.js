@@ -108,7 +108,7 @@ export function About() {
                     </Grid>
                     <Grid item xs={12} md={6} className={styles.center}>
                         <div>
-                            <img className={styles.imageLogin} alt="logo" src="/personal-site.png" />
+                            <img className={styles.imageLogin} alt="logo" src="/about.png" />
                         </div>
                     </Grid>
                 </Grid>

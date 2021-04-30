@@ -16,7 +16,7 @@ const Home = () => {
             },
         },
         color: {
-            color: '#c97777'
+            color: 'grey',
         },
         title: {
             fontSize: 30,
