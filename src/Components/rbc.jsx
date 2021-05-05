@@ -6,7 +6,6 @@ const useStyles = makeStyles(theme => ({
         marginBottom: theme.spacing(5),
         marginRight: theme.spacing(10),
         borderRadius: 2,
-        // boxShadow: '0px 2px 5px 2px rgba(212,212,212)',
         '&:hover': {
             boxShadow: '0px 2px 5px 2px rgba(212,212,212)',
             cursor: 'pointer',
@@ -51,8 +50,7 @@ const useStyles = makeStyles(theme => ({
 export function RBC() {
     const styles = useStyles();
     return (
-        <div onClick={() => 
-            { window.location = `/projects/rbc`; }}
+        <div onClick={() => { window.location = `/projects/rbc`; }}
             className={styles.card}>
             <CardContent className={styles.cardContent}>
                 <div className={styles.center}>

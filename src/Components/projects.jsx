@@ -1,11 +1,9 @@
 import React from 'react';
 import { Grid, makeStyles } from '@material-ui/core';
-import {Wellify} from '../Components/wellify';
-import {Nasa} from '../Components/nasa';
-import {RBC} from './rbc';
-import {PersonalSite} from './personalWebsite';
-
-
+import { Wellify } from '../Components/wellify';
+import { Nasa } from '../Components/nasa';
+import { RBC } from './rbc';
+import { PersonalSite } from './personalWebsite';
 
 const useStyles = makeStyles(theme => ({
 

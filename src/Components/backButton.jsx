@@ -8,7 +8,6 @@ const useStyles = makeStyles(theme => ({
            display: 'none'
           },
     }
-
 }));
 
 export function BackButton() {
