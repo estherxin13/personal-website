@@ -4,7 +4,7 @@ import {Link as LinkR} from 'react-router-dom';
  export const Nav = styled.nav`
     justify-content: center; 
     align-items: center; 
-    font-size: 1.3rem; 
+    font-size: 1.35rem; 
     top: 0; 
     z-index:10;
     @media screen and (max-width: 960px) {

@@ -14,6 +14,13 @@ const useStyles = makeStyles({
         '&:hover': {
             borderBottom: '3px solid black',
         },
+    },
+    logoHover:{
+        textDecoration: 'none',
+        color: 'black',
+        '&:hover': {
+            color: 'grey',
+        },
     }
 });
 
@@ -25,7 +32,7 @@ const Navbar = ({ toggle }) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/'>
-                        <Link className={styles.link} to={'/'}>E S T H E R&nbsp;&nbsp;&nbsp; X I N</Link>
+                        <Link className={styles.logoHover} to={'/'}>E S T H E R&nbsp;&nbsp;&nbsp; X I N</Link>
                     </NavLogo>
                     <MobileIcon onClick={toggle} >
                         <FaBars />
