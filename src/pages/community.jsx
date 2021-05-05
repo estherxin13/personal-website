@@ -152,7 +152,7 @@ export function Community() {
                         </div>
                     </TimelineOppositeContent>
                 </TimelineItem>
-                <TimelineItem>
+                {/* <TimelineItem>
                     <TimelineSeparator className={classes.padding}>
                         <TimelineDot color="black">
                             <MouseIcon />
@@ -187,7 +187,7 @@ export function Community() {
                             </Card>
                         </div>
                     </TimelineOppositeContent>
-                </TimelineItem>
+                </TimelineItem> */}
             </Timeline>
         </>
     );
