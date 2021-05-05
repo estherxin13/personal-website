@@ -134,7 +134,7 @@ export function Community() {
                                         <img className={classes.imageLogin} alt="logo" src="/stem.JPG" />
                                     </div>
                                     <div className={classes.title1}>
-                                        <strong>stem Club</strong>
+                                        <strong>stem club</strong>
                                         <br></br>
                                         <br></br>
                                         <div className={classes.text}>
