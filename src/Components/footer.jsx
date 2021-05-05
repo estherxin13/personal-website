@@ -9,14 +9,17 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: 'black',
         padding: theme.spacing(3),
         paddingLeft: theme.spacing(23),
-        fontSize: 18,
+        fontSize: 20,
         [theme.breakpoints.down('md')]: {
-            paddingLeft: theme.spacing(8),
+            paddingLeft: theme.spacing(10),
         },
     },
     link: {
         textDecoration: 'none',
         color: 'white',
+        '&:hover': {
+            color: '#C6C6C6',
+        },
     },
     grid: {
         paddingTop: theme.spacing(3),
