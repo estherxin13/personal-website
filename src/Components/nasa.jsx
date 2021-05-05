@@ -51,7 +51,7 @@ const useStyles = makeStyles(theme => ({
 export function Nasa() {
     const styles = useStyles();
     return (
-        <div onClick={() => { window.location = `/projects/Nasa`; }}
+        <div onClick={() => { window.location = `/Nasa`; }}
             className={styles.card}>
             <CardContent className={styles.cardContent}>
                 <div className={styles.center}>

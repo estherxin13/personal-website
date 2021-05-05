@@ -53,7 +53,7 @@ export function Wellify() {
     const styles = useStyles();
     return (
         <div onClick={() => 
-            { window.location = `/projects/wellify`; }}
+            { window.location = `/wellify`; }}
             className={styles.card}>
             <CardContent className={styles.cardContent}>
                 <div className={styles.center}>

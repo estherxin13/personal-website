@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
 export function RBC() {
     const styles = useStyles();
     return (
-        <div onClick={() => { window.location = `/projects/rbc`; }}
+        <div onClick={() => { window.location = `/rbc`; }}
             className={styles.card}>
             <CardContent className={styles.cardContent}>
                 <div className={styles.center}>
