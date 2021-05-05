@@ -4,7 +4,7 @@ import { Divider, Grid, makeStyles } from '@material-ui/core';
 const useStyles = makeStyles(theme => ({
     headerRoot: {
         color: theme.palette.getContrastText(theme.palette.primary.main),
-        backgroundColor: '#47817D',
+        backgroundColor: '#0059B3',
         textAlign: 'center',
         fontSize: 18,
         marginTop: theme.spacing(3),
@@ -37,8 +37,8 @@ const useStyles = makeStyles(theme => ({
           fontSize: 20
       },
       title:{
-        fontSize: 40,
-        paddingLeft: theme.spacing(49),
+        fontSize: 35,
+        paddingLeft: theme.spacing(50),
         paddingTop: theme.spacing(5),
         [theme.breakpoints.down('md')]: {
             paddingLeft: theme.spacing(5),
@@ -64,18 +64,18 @@ const useStyles = makeStyles(theme => ({
 
 }));
 
-export function WellifyDetails() {
+export function RBCDetails() {
     const styles = useStyles();
 
     return (
         <>
         <div className={styles.headerRoot}>
             <div>
-                <img className={styles.imageLogin} alt="logo" src="/wellify2.svg" />
+                <img className={styles.imageLogin} alt="logo" src="/rbc.svg" />
             </div>
         </div>
         <div className={styles.title}>
-            <strong>Year Zero Studios</strong> 
+            <strong>RBC 'Next Great Innovator' Hackathon</strong> 
         </div>
         {/* <div className={styles.desc}>
             <strong>Overview</strong> 
@@ -95,14 +95,11 @@ export function WellifyDetails() {
                     <strong>Role</strong>
                   </li>
                   <li>
-                    Software Developer 
+                    UX/UI Designer
                   </li>
                   <li>
-                    UX/UI Designer
-                  </li>    
-                  <li>
-                    Market Researcher
-                  </li>          
+                    Market, User Researcher 
+                  </li>            
                 </ul>
               </Grid>
               <Grid item xs={12} sm={4}>
@@ -111,7 +108,7 @@ export function WellifyDetails() {
                     <strong>Timeline</strong>
                   </li>
                   <li>
-                    January - April 2021
+                    September 2019
                   </li>              
                 </ul>
               </Grid>
@@ -121,17 +118,8 @@ export function WellifyDetails() {
                     <strong>Tools</strong>
                   </li>
                   <li>
-                    Typescript
-                  </li>
-                  <li>
-                    React Hooks
-                  </li>         
-                  <li>
-                    Firebase
-                  </li>     
-                  <li>
-                    Zoom and Stripe API 
-                  </li>   
+                    HTML + CSS
+                  </li> 
                   <li>
                     Figma 
                   </li>        

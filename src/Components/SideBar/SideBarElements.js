@@ -13,7 +13,7 @@ import {FaTimes} from 'react-icons/fa';
     top:0; 
     left: 0; 
     transition: 0.3s ease-in-out; 
-    font-size: 15;
+    font-size: 20px;
     opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
     top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
  `;
@@ -29,7 +29,7 @@ import {FaTimes} from 'react-icons/fa';
     background: transparent;
     top:1.5rem; 
     right: 1.5rem; 
-    font-size: 2rem
+    font-size: 2rem;
     outline: none; 
     cursor: pointer;
 

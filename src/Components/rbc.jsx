@@ -1,7 +1,5 @@
 import React from 'react';
-import { Card, CardContent, makeStyles, Typography } from '@material-ui/core';
-import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
-
+import { CardContent, makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     card: {
@@ -53,7 +51,9 @@ const useStyles = makeStyles(theme => ({
 export function RBC() {
     const styles = useStyles();
     return (
-        <div className={styles.card}>
+        <div onClick={() => 
+            { window.location = `/projects/rbc`; }}
+            className={styles.card}>
             <CardContent className={styles.cardContent}>
                 <div className={styles.center}>
                     <img className={styles.imageLogin} alt="logo" src="/rbc.svg" />

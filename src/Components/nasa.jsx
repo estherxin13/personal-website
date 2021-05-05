@@ -52,7 +52,9 @@ const useStyles = makeStyles(theme => ({
 export function Nasa() {
     const styles = useStyles();
     return (
-        <div className={styles.card}>
+        <div onClick={() => 
+            { window.location = `/projects/Nasa`; }}
+            className={styles.card}>
             <CardContent className={styles.cardContent}>
                 <div className={styles.center}>
                     <img className={styles.imageLogin} alt="logo" src="/nasa.svg" />

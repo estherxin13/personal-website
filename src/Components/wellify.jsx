@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, makeStyles, Typography } from '@material-ui/core';
+import { Card, CardContent, Link, makeStyles, Typography } from '@material-ui/core';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
 
@@ -50,10 +50,13 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
+
 export function Wellify() {
     const styles = useStyles();
     return (
-        <div className={styles.card}>
+        <div onClick={() => 
+            { window.location = `/projects/wellify`; }}
+            className={styles.card}>
             <CardContent className={styles.cardContent}>
                 <div className={styles.center}>
                     <img className={styles.imageLogin} alt="logo" src="/wellify2.svg" />

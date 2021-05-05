@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 5,
         boxShadow: '0px 4px 9px 4px rgba(212,212,212)',
         [theme.breakpoints.down('md')]: {
-            width: 310,
+            display: 'none',
         },
     },
     title1: {

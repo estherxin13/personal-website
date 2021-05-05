@@ -9,10 +9,11 @@ const Home = () => {
         quotes: {
             fontSize: 20,
             marginLeft: theme.spacing(5),
-            marginBottom: theme.spacing(10),
+            marginBottom: theme.spacing(3),
             [theme.breakpoints.up('md')]: {
                 fontSize: 25,
                 marginLeft: theme.spacing(20),
+                marginBottom: theme.spacing(10),
             },
         },
         color: {

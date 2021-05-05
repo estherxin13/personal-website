@@ -4,13 +4,13 @@ import {Link as LinkR} from 'react-router-dom';
  export const Nav = styled.nav`
     justify-content: center; 
     align-items: center; 
-    font-size: 1rem; 
+    font-size: 1.3rem; 
     top: 0; 
     z-index:10;
-
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
+
  `;
 
  export const NavbarContainer = styled.div`
@@ -26,7 +26,7 @@ import {Link as LinkR} from 'react-router-dom';
  export const NavLogo= styled(LinkR)`
 color: black; 
 cursor: pointer; 
-font-size: 1rem; 
+font-size: 1.3rem; 
 display: flex; 
 align-items: center; 
 margin-left: 24px; 
@@ -77,7 +77,6 @@ text-decorations: none;
 padding: 0 3rem; 
 height: 100%; 
 cursor: pointer; 
-
 &.hover {
     border-bottom: 3px solid black; 
 }

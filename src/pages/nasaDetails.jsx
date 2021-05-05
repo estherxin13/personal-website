@@ -4,7 +4,7 @@ import { Divider, Grid, makeStyles } from '@material-ui/core';
 const useStyles = makeStyles(theme => ({
     headerRoot: {
         color: theme.palette.getContrastText(theme.palette.primary.main),
-        backgroundColor: '#47817D',
+        backgroundColor: '#070A0B',
         textAlign: 'center',
         fontSize: 18,
         marginTop: theme.spacing(3),
@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
           fontSize: 20
       },
       title:{
-        fontSize: 40,
+        fontSize: 35,
         paddingLeft: theme.spacing(49),
         paddingTop: theme.spacing(5),
         [theme.breakpoints.down('md')]: {
@@ -64,18 +64,18 @@ const useStyles = makeStyles(theme => ({
 
 }));
 
-export function WellifyDetails() {
+export function NasaDetails() {
     const styles = useStyles();
 
     return (
         <>
         <div className={styles.headerRoot}>
             <div>
-                <img className={styles.imageLogin} alt="logo" src="/wellify2.svg" />
+                <img className={styles.imageLogin} alt="logo" src="/nasaDetails.svg" />
             </div>
         </div>
         <div className={styles.title}>
-            <strong>Year Zero Studios</strong> 
+            <strong>NASA Space Apps Hackathon</strong> 
         </div>
         {/* <div className={styles.desc}>
             <strong>Overview</strong> 
@@ -99,10 +99,10 @@ export function WellifyDetails() {
                   </li>
                   <li>
                     UX/UI Designer
-                  </li>    
+                  </li>  
                   <li>
                     Market Researcher
-                  </li>          
+                  </li>            
                 </ul>
               </Grid>
               <Grid item xs={12} sm={4}>
@@ -111,7 +111,7 @@ export function WellifyDetails() {
                     <strong>Timeline</strong>
                   </li>
                   <li>
-                    January - April 2021
+                    October 2019
                   </li>              
                 </ul>
               </Grid>
@@ -121,20 +121,14 @@ export function WellifyDetails() {
                     <strong>Tools</strong>
                   </li>
                   <li>
-                    Typescript
+                    Javascript
                   </li>
                   <li>
-                    React Hooks
+                    HTML + CSS
                   </li>         
                   <li>
-                    Firebase
-                  </li>     
-                  <li>
-                    Zoom and Stripe API 
-                  </li>   
-                  <li>
-                    Figma 
-                  </li>        
+                    Weather API
+                  </li>           
                 </ul>
               </Grid>
             </Grid>

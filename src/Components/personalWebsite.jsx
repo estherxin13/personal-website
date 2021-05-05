@@ -49,7 +49,9 @@ const useStyles = makeStyles(theme => ({
 export function PersonalSite() {
     const styles = useStyles();
     return (
-        <div className={styles.card}>
+        <div onClick={() => 
+            { window.location = `/projects/personalWebsite`; }}
+            className={styles.card}>
             <CardContent className={styles.cardContent}>
                 <div className={styles.center}>
                     <img className={styles.imageLogin} alt="logo" src="/site.svg" />

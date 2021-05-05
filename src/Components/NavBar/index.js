@@ -10,6 +10,11 @@ const useStyles = makeStyles({
         textDecoration: 'none',
         color: 'black',
     },
+    hover: {
+        '&:hover': {
+            borderBottom: '3px solid black',
+        },
+    }
 });
 
 const Navbar = ({ toggle }) => {
@@ -27,23 +32,23 @@ const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItems>
-                            <Items>
+                            <Items className={styles.hover}>
                                 <Link className={styles.link} to={'/about'}>about</Link>
                             </Items>
                         </NavItems>
                         <NavItems>
-                            <Items>
+                            <Items className={styles.hover}>
                                 <Link className={styles.link} to={'/'}>projects</Link>
                             </Items>
                         </NavItems>
                         <NavItems>
-                            <Items>
+                            <Items className={styles.hover}>
                                 <Link className={styles.link} to={'/community'}>community</Link>
                             </Items>
                         </NavItems>
                         <NavItems>
                             <a className={styles.link} href="https://drive.google.com/file/d/10wj7lyNlm4WQBz9slUk7fSmh5gKmlNeh/view?usp=sharing" target="_blank" rel="noreferrer">
-                                <Items>resume</Items>
+                                <Items className={styles.hover}>resume</Items>
                             </a>
                         </NavItems>
                     </NavMenu>
