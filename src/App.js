@@ -15,10 +15,10 @@ function App() {
     <BrowserRouter>
       <NavImport />
       <Route path="/about" component={About} />
-      <Route path="/projects/wellify" component={WellifyDetails} />
-      <Route path="/projects/personalWebsite" component={SiteDetails} />
-      <Route path="/projects/rbc" component={RBCDetails} />
-      <Route path="/projects/Nasa" component={NasaDetails} />
+      <Route path="/wellify" component={WellifyDetails} />
+      <Route path="/personalWebsite" component={SiteDetails} />
+      <Route path="/rbc" component={RBCDetails} />
+      <Route path="/Nasa" component={NasaDetails} />
       <Route path="/community" component={Community} />
       <Route exact path="/" component={Home} />
       <Footer />

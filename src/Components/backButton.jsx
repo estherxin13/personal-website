@@ -16,8 +16,8 @@ export function BackButton() {
   return (
     <>
     <IconButton className={styles.icon}>
-    <ArrowBackIosIcon fontSize="large" onClick={() => 
-            { window.location = `/`; }}/>
+    <ArrowBackIosIcon fontSize="large" 
+      onClick={() => { window.location = `/`; }}/>
     </IconButton>
     </>
   );
