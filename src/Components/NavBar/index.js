@@ -15,7 +15,7 @@ const useStyles = makeStyles({
             borderBottom: '3px solid black',
         },
     },
-    logoHover:{
+    logoHover: {
         textDecoration: 'none',
         color: 'black',
         '&:hover': {
@@ -45,7 +45,9 @@ const Navbar = ({ toggle }) => {
                         </NavItems>
                         <NavItems>
                             <Items className={styles.hover}>
-                                <Link className={styles.link} to={'/'}>projects</Link>
+                                <Link className={styles.link} to={'/'}>
+                                    project
+                                </Link>
                             </Items>
                         </NavItems>
                         <NavItems>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Divider, Grid, IconButton, makeStyles } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import { BackButton } from '../Components/backButton';
 
 const useStyles = makeStyles(theme => ({
   headerRoot: {
@@ -33,6 +34,12 @@ const useStyles = makeStyles(theme => ({
   title: {
     fontSize: 40,
     paddingTop: theme.spacing(5),
+    paddingLeft: theme.spacing(30),
+    paddingRight: theme.spacing(15),
+    [theme.breakpoints.down('md')]: {
+      paddingLeft: theme.spacing(5),
+      paddingRight: theme.spacing(5),
+    },
   },
   padding: {
     paddingLeft: theme.spacing(40),
@@ -60,6 +67,10 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(5),
     fontSize: 20,
     lineHeight: 2,
+    [theme.breakpoints.down('md')]: {
+      paddingLeft: theme.spacing(5),
+      paddingRight: theme.spacing(5),
+    },
   },
   icon: {
     color: 'grey'
@@ -76,10 +87,11 @@ export function SiteDetails() {
           <img className={styles.imageLogin} alt="logo" src="/site.svg" />
         </div>
       </div>
-      <div className={styles.padding}>
         <div className={styles.title}>
+          <BackButton />
           <strong>Personal Website</strong>
         </div>
+        <div className={styles.padding}>
         <footer className={styles.textRoot}>
           <Grid container spacing={5} justifyContent="space-around">
             <Grid item xs={12} sm={4}>
@@ -127,8 +139,8 @@ export function SiteDetails() {
       <Divider variant="middle" />
       <div className={styles.text}>
         <p>
-          I designed my own personal website using ReactJS and javascript! <br />
-          I highlight my work experience, side-projects, hobbies and interests!
+          I designed and developed my own personal website using ReactJS, javascript <br />
+          and Figma! I highlight my work experience, side-projects, hobbies and interests!
           <br />
           Check out the github here:
           <IconButton>

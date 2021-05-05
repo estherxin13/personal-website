@@ -97,7 +97,7 @@ export function Community() {
                                         <img className={classes.imageLogin} alt="logo" src="/soccer.JPG" />
                                     </div>
                                     <div className={classes.title1}>
-                                        <strong>Competitive soccer</strong>
+                                        <strong>competitive soccer</strong>
                                         <br></br>
                                         <br></br>
                                         <div className={classes.text}>
@@ -134,7 +134,7 @@ export function Community() {
                                         <img className={classes.imageLogin} alt="logo" src="/stem.JPG" />
                                     </div>
                                     <div className={classes.title1}>
-                                        <strong>Stem Club</strong>
+                                        <strong>stem Club</strong>
                                         <br></br>
                                         <br></br>
                                         <div className={classes.text}>

@@ -1,5 +1,7 @@
 import React from 'react';
-import { Card, Divider, Grid, makeStyles } from '@material-ui/core';
+import { Card, Divider, Grid, IconButton, makeStyles } from '@material-ui/core';
+import WebIcon from '@material-ui/icons/Web';
+import { BackButton } from '../Components/backButton';
 
 const useStyles = makeStyles(theme => ({
   headerRoot: {
@@ -27,11 +29,19 @@ const useStyles = makeStyles(theme => ({
     },
   },
   subtitle: {
-    fontSize: 20
+    fontSize: 20,
+    marginBottom: theme.spacing(3),
+
   },
   title: {
     fontSize: 40,
     paddingTop: theme.spacing(5),
+    paddingLeft: theme.spacing(30),
+    paddingRight: theme.spacing(15),
+    [theme.breakpoints.down('md')]: {
+      paddingLeft: theme.spacing(5),
+      paddingRight: theme.spacing(5),
+    },
   },
   padding: {
     paddingLeft: theme.spacing(40),
@@ -59,6 +69,13 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(5),
     fontSize: 20,
     lineHeight: 2,
+    [theme.breakpoints.down('md')]: {
+      paddingLeft: theme.spacing(5),
+      paddingRight: theme.spacing(5),
+    },
+  },
+  icon: {
+    color: 'grey'
   }
 }));
 
@@ -72,11 +89,11 @@ export function WellifyDetails() {
           <img className={styles.imageLogin} alt="logo" src="/wellify2.svg" />
         </div>
       </div>
+      <div className={styles.title}>
+        <BackButton />
+        <strong>Year Zero Studios: Internship</strong>
+      </div>
       <div className={styles.padding}>
-
-        <div className={styles.title}>
-          <strong>Year Zero Studios</strong>
-        </div>
         <footer className={styles.textRoot}>
           <Grid container spacing={5} justifyContent="space-around">
             <Grid item xs={12} sm={4}>
@@ -131,6 +148,53 @@ export function WellifyDetails() {
         </footer>
       </div>
       <Divider variant="middle" />
+      <div className={styles.text}>
+        <div className={styles.subtitle}>
+          <strong>Overview</strong>
+        </div>
+        <p>
+          Wellify, an online booking and payment application for wellness instructors,
+           <br />is a company founded under <strong>Year Zero Studios</strong>, a start-up based in Toronto
+           <br />that explores solutions in mental health,  wellness, education and more.
+          <br />
+          <br />
+          Check out the application here:
+          <IconButton>
+            <a className={styles.icon} target="_blank" rel="noopener noreferrer" href="https://app.wellify.studio/">
+              <WebIcon fontSize="large" />
+            </a>
+          </IconButton>
+        </p>
+      </div>
+      <Card className={styles.card}>
+        <img className={styles.image} alt="logo" src="/wellifyHome.svg" />
+      </Card>
+      <div className={styles.text}>
+      <div className={styles.subtitle}>
+          <strong>My Role and Contributions</strong>
+        </div>
+        <p>
+          Over the past four months, I contributed to the complete rebrand of Wellify, starting
+        <br />from market research of the wellness industry to creating mock-ups using Figma
+        <br />and finally to development using <strong>Typescript, React Hooks, and Firebase.</strong>
+        </p>
+      </div>
+      <div className={styles.text}>
+        <p>
+          I developed and architected a new variable payment and zoom 
+        <br />integration feature from design torelease using the <strong>Stripe and Zoom API.</strong>
+        </p>
+      </div>
+      <div className={styles.text}>
+        <p>
+          I also designed and developed various highly requested customer features to increase user
+        <br />increase user acquisiton by over <strong>100%</strong>. I guided product vision through creating user stories,
+        <br /> new branding and roadmaps while applying design and accessibility driven principles.
+        </p>
+      </div>
+      <Card className={styles.card}>
+        <img className={styles.image} alt="logo" src="/wellifyPay.svg" />
+      </Card>
     </>
   );
 }
