@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, Divider, Grid, IconButton, makeStyles } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { BackButton } from '../Components/backButton';
-import WebIcon from '@material-ui/icons/Web';
 
 const useStyles = makeStyles(theme => ({
   headerRoot: {
@@ -157,14 +156,14 @@ export function WeatherDetails() {
           </a> <strong>ReactJS, javascript and Figma!</strong>
           <br />
           <br />
-          Check out the application:
+          {/* Check out the application:
           <IconButton>
             <a className={styles.icon} target="_blank" rel="noopener noreferrer" href="https://github.com/estherxin13/personal-website">
               <WebIcon fontSize="large" />
 
             </a>
-          </IconButton>
-          Github:
+          </IconButton> */}
+          Check out the Github:
           <IconButton>
             <a className={styles.icon} target="_blank" rel="noopener noreferrer" href="https://github.com/estherxin13/weather-app">
               <GitHubIcon fontSize="large" />
