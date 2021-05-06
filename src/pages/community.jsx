@@ -10,7 +10,6 @@ import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import Typography from '@material-ui/core/Typography';
 import { Card } from '@material-ui/core';
 import SportsSoccerIcon from '@material-ui/icons/SportsSoccer';
-import MouseIcon from '@material-ui/icons/Mouse';
 
 const useStyles = makeStyles((theme) => ({
     root: {
