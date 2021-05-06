@@ -9,6 +9,7 @@ import { WellifyDetails } from './pages/wellifyDetails';
 import { SiteDetails } from './pages/siteDetails';
 import { RBCDetails } from './pages/rbcDetails';
 import { NasaDetails } from './pages/nasaDetails';
+import { WeatherDetails } from './pages/weatherDetails';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <NavImport />
       <Route path="/about" component={About} />
       <Route path="/wellify" component={WellifyDetails} />
+      <Route path="/weather" component={WeatherDetails} />
       <Route path="/personalWebsite" component={SiteDetails} />
       <Route path="/rbc" component={RBCDetails} />
       <Route path="/Nasa" component={NasaDetails} />

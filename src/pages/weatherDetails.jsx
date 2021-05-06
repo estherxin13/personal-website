@@ -1,18 +1,21 @@
 import React from 'react';
 import { Card, Divider, Grid, IconButton, makeStyles } from '@material-ui/core';
-import WebIcon from '@material-ui/icons/Web';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import { BackButton } from '../Components/backButton';
+import WebIcon from '@material-ui/icons/Web';
 
 const useStyles = makeStyles(theme => ({
   headerRoot: {
     color: theme.palette.getContrastText(theme.palette.primary.main),
-    backgroundColor: '#47817D',
+    backgroundColor: '#E96D49',
     textAlign: 'center',
     fontSize: 18,
     marginTop: theme.spacing(3),
   },
   imageLogin: {
-    width: 600,
+    width: 300,
+    borderRadius: 15,
+    margin: theme.spacing(10),
     [theme.breakpoints.down('md')]: {
       width: 350,
     },
@@ -29,9 +32,7 @@ const useStyles = makeStyles(theme => ({
     },
   },
   subtitle: {
-    fontSize: 20,
-    marginBottom: theme.spacing(3),
-
+    fontSize: 20
   },
   title: {
     fontSize: 40,
@@ -75,31 +76,32 @@ const useStyles = makeStyles(theme => ({
     },
   },
   icon: {
-    color: 'grey'
+    color: 'grey',
+    paddingRight: theme.spacing(5),
   },
   wordLink: {
     textDecoration: 'none',
     color: 'black',
-    borderBottom: '1.5px solid black',
+    borderBottom: '2px solid black',
     '&:hover': {
       color: 'grey',
     },
   }
 }));
 
-export function WellifyDetails() {
+export function WeatherDetails() {
   const styles = useStyles();
 
   return (
     <>
       <div className={styles.headerRoot}>
         <div>
-          <img className={styles.imageLogin} alt="logo" src="/wellify2.svg" />
+          <img className={styles.imageLogin} alt="logo" src="/weatherHeader.png" />
         </div>
       </div>
       <div className={styles.title}>
         <BackButton />
-        <strong>Year Zero Studios: Internship</strong>
+        <strong>Weather App</strong>
       </div>
       <div className={styles.padding}>
         <footer className={styles.textRoot}>
@@ -115,9 +117,6 @@ export function WellifyDetails() {
                 <li>
                   UX/UI Designer
                   </li>
-                <li>
-                  Market Researcher
-                  </li>
               </ul>
             </Grid>
             <Grid item xs={12} sm={4}>
@@ -126,7 +125,7 @@ export function WellifyDetails() {
                   <strong>Timeline</strong>
                 </li>
                 <li>
-                  January - April 2021
+                  May 2021
                   </li>
               </ul>
             </Grid>
@@ -136,16 +135,10 @@ export function WellifyDetails() {
                   <strong>Tools</strong>
                 </li>
                 <li>
-                  Typescript
+                  Javascript
                   </li>
                 <li>
-                  React Hooks
-                  </li>
-                <li>
-                  Firebase
-                  </li>
-                <li>
-                  Zoom and Stripe API
+                  ReactJS
                   </li>
                 <li>
                   Figma
@@ -157,53 +150,30 @@ export function WellifyDetails() {
       </div>
       <Divider variant="middle" />
       <div className={styles.text}>
-        <div className={styles.subtitle}>
-          <strong>Overview</strong>
-        </div>
         <p>
-          Wellify, an online booking and payment application for wellness instructors,
-           <br />is a company founded under <strong><a className={styles.wordLink} target="_blank" rel="noopener noreferrer" href="https://www.yearzerostudios.com/">
-            Year Zero Studios
-                                        </a></strong>, a start-up based in Toronto
-           <br />that explores solutions in mental health,  wellness, education and more.
+          I designed and developed a Weather App that showcases the forecast of any <br />
+          searched city using the <a className={styles.wordLink} target="_blank" rel="noopener noreferrer" href="https://www.yearzerostudios.com/">
+            Open Weather API,
+          </a> <strong>ReactJS, javascript and Figma!</strong>
           <br />
           <br />
-          Check out the application here:
+          Check out the application:
           <IconButton>
-            <a className={styles.icon} target="_blank" rel="noopener noreferrer" href="https://app.wellify.studio/">
+            <a className={styles.icon} target="_blank" rel="noopener noreferrer" href="https://github.com/estherxin13/personal-website">
               <WebIcon fontSize="large" />
+
+            </a>
+          </IconButton>
+          Github:
+          <IconButton>
+            <a className={styles.icon} target="_blank" rel="noopener noreferrer" href="https://github.com/estherxin13/weather-app">
+              <GitHubIcon fontSize="large" />
             </a>
           </IconButton>
         </p>
       </div>
       <Card className={styles.card}>
-        <img className={styles.image} alt="logo" src="/wellifyHome.svg" />
-      </Card>
-      <div className={styles.text}>
-        <div className={styles.subtitle}>
-          <strong>My Role and Contributions</strong>
-        </div>
-        <p>
-          Over the past four months, I contributed to the complete rebrand of Wellify, starting
-        <br />from market research of the wellness industry to creating mock-ups using Figma
-        <br />and finally to development using <strong>Typescript, React Hooks, and Firebase.</strong>
-        </p>
-      </div>
-      <div className={styles.text}>
-        <p>
-          I developed and architected a new variable payment and zoom
-        <br />integration feature from design to release using the <strong>Stripe and Zoom API.</strong>
-        </p>
-      </div>
-      <div className={styles.text}>
-        <p>
-          I also designed and developed various highly requested customer features to increase
-        <br />acquisiton by over <strong>100%</strong>. I guided product vision through creating user stories,
-        <br /> new branding and roadmaps while applying design and accessibility driven principles.
-        </p>
-      </div>
-      <Card className={styles.card}>
-        <img className={styles.image} alt="logo" src="/wellifyPay.svg" />
+        <img className={styles.image} alt="logo" src="/weatherDetails.png" />
       </Card>
     </>
   );

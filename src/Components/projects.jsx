@@ -4,6 +4,7 @@ import { Wellify } from '../Components/wellify';
 import { Nasa } from '../Components/nasa';
 import { RBC } from './rbc';
 import { PersonalSite } from './personalWebsite';
+import { Weather } from './weather';
 
 const useStyles = makeStyles(theme => ({
 
@@ -31,6 +32,7 @@ export default function Project() {
 
                             <div className={styles.cardLeft}>
                                 <Wellify />
+                                <Weather />
                                 <Nasa />
                             </div>
 
