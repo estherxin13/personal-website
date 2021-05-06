@@ -139,8 +139,8 @@ export function SiteDetails() {
       <Divider variant="middle" />
       <div className={styles.text}>
         <p>
-          I designed and developed my own personal website using ReactJS, javascript <br />
-          and Figma! I highlight my work experience, side-projects, hobbies and interests!
+          I designed and developed my own personal website using <strong>ReactJS, javascript <br />
+          and Figma!</strong> I highlight my work experience, side-projects, hobbies and interests!
           <br />
           Check out the github here:
           <IconButton>

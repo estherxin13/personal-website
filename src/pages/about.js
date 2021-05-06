@@ -43,7 +43,16 @@ const useStyles = makeStyles(theme => ({
     link: {
         textDecoration: 'none',
         color: 'grey'
+
     },
+    wordLink:{
+        textDecoration: 'none',
+        color: 'black',
+        borderBottom: '1.5px solid black',
+        '&:hover': {
+            color: 'grey',
+        },
+    }
 }));
 
 export function About() {
@@ -72,7 +81,7 @@ export function About() {
                                     <br />
                                     <br />
                                     Currently, I'm on a four-month internship in <strong>
-                                        <a className={styles.link} target="_blank" rel="noopener noreferrer" href="https://www.yearzerostudios.com/">
+                                        <a className={styles.wordLink} target="_blank" rel="noopener noreferrer" href="https://www.yearzerostudios.com/">
                                             Year Zero Studios
                                         </a>
                                     </strong>, working with <strong>Typescript, React Hooks and Firebase</strong>!

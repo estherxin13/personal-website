@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
         textDecoration: 'none',
         color: 'white',
         '&:hover': {
-            color: '#C6C6C6',
+            borderBottom: '2px solid white',
         },
     },
     grid: {

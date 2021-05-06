@@ -6,10 +6,10 @@ import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
-import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import Typography from '@material-ui/core/Typography';
 import { Card } from '@material-ui/core';
 import SportsSoccerIcon from '@material-ui/icons/SportsSoccer';
+import BuildIcon from '@material-ui/icons/Build';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -118,7 +118,7 @@ export function Community() {
                 <TimelineItem>
                     <TimelineSeparator className={classes.padding}>
                         <TimelineDot color="black">
-                            <LaptopMacIcon />
+                            <BuildIcon />
                         </TimelineDot>
                         <TimelineConnector />
                     </TimelineSeparator>

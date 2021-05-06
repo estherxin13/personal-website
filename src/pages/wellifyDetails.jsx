@@ -76,7 +76,15 @@ const useStyles = makeStyles(theme => ({
   },
   icon: {
     color: 'grey'
-  }
+  },
+  wordLink:{
+    textDecoration: 'none',
+    color: 'black',
+    borderBottom: '1.5px solid black',
+    '&:hover': {
+        color: 'grey',
+    },
+}
 }));
 
 export function WellifyDetails() {
@@ -154,7 +162,9 @@ export function WellifyDetails() {
         </div>
         <p>
           Wellify, an online booking and payment application for wellness instructors,
-           <br />is a company founded under <strong>Year Zero Studios</strong>, a start-up based in Toronto
+           <br />is a company founded under <strong><a className={styles.wordLink} target="_blank" rel="noopener noreferrer" href="https://www.yearzerostudios.com/">
+                                            Year Zero Studios
+                                        </a></strong>, a start-up based in Toronto
            <br />that explores solutions in mental health,  wellness, education and more.
           <br />
           <br />
@@ -182,13 +192,13 @@ export function WellifyDetails() {
       <div className={styles.text}>
         <p>
           I developed and architected a new variable payment and zoom 
-        <br />integration feature from design torelease using the <strong>Stripe and Zoom API.</strong>
+        <br />integration feature from design to release using the <strong>Stripe and Zoom API.</strong>
         </p>
       </div>
       <div className={styles.text}>
         <p>
-          I also designed and developed various highly requested customer features to increase user
-        <br />increase user acquisiton by over <strong>100%</strong>. I guided product vision through creating user stories,
+          I also designed and developed various highly requested customer features to increase 
+        <br />acquisiton by over <strong>100%</strong>. I guided product vision through creating user stories,
         <br /> new branding and roadmaps while applying design and accessibility driven principles.
         </p>
       </div>
