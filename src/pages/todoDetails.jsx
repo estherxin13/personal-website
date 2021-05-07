@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     margin: theme.spacing(5),
     borderRadius: 15,
     [theme.breakpoints.down('md')]: {
-      width: 350,
+      width: 250,
     },
   },
   textRoot: {
