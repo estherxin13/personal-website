@@ -3,6 +3,7 @@ import { Grid, makeStyles } from '@material-ui/core';
 import { Wellify } from '../Components/wellify';
 import { Nasa } from '../Components/nasa';
 import { RBC } from './rbc';
+import { Todo } from './todo';
 import { PersonalSite } from './personalWebsite';
 import { Weather } from './weather';
 
@@ -41,6 +42,7 @@ export default function Project() {
                     <Grid item xs={12} md={6}>
                         <div className={styles.cardRight}>
                             <PersonalSite />
+                            <Todo />
                             <RBC />
                         </div>
                     </Grid>

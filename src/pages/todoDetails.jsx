@@ -6,15 +6,15 @@ import { BackButton } from '../Components/backButton';
 const useStyles = makeStyles(theme => ({
   headerRoot: {
     color: theme.palette.getContrastText(theme.palette.primary.main),
-    backgroundColor: '#E96D49',
+    backgroundColor: '#D08B7F',
     textAlign: 'center',
     fontSize: 18,
     marginTop: theme.spacing(3),
   },
   imageLogin: {
-    width: 300,
+    width: 400,
+    margin: theme.spacing(5),
     borderRadius: 15,
-    margin: theme.spacing(10),
     [theme.breakpoints.down('md')]: {
       width: 350,
     },
@@ -88,19 +88,19 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export function WeatherDetails() {
+export function TodoDetails() {
   const styles = useStyles();
 
   return (
     <>
       <div className={styles.headerRoot}>
         <div>
-          <img className={styles.imageLogin} alt="logo" src="/weatherHeader.png" />
+          <img className={styles.imageLogin} alt="logo" src="/todoHeader.svg" />
         </div>
       </div>
       <div className={styles.title}>
         <BackButton />
-        <strong>Weather App</strong>
+        <strong>To-Do App</strong>
       </div>
       <div className={styles.padding}>
         <footer className={styles.textRoot}>
@@ -134,10 +134,11 @@ export function WeatherDetails() {
                   <strong>Tools</strong>
                 </li>
                 <li>
-                  Javascript
+                ReactJS
+
                   </li>
                 <li>
-                  ReactJS
+                  Firebase
                   </li>
                 <li>
                   Figma
@@ -150,11 +151,9 @@ export function WeatherDetails() {
       <Divider variant="middle" />
       <div className={styles.text}>
         <p>
-          I designed and developed a Weather App that showcases the forecast of any <br />
-          searched city using the <a className={styles.wordLink} target="_blank" rel="noopener noreferrer" href="https://openweathermap.org/api">
-            Open Weather API,
-          </a> <strong>ReactJS, javascript and Figma!</strong>
+          I designed and developed a ToDo App using <strong>ReactJS, Firebase and Figma!</strong> The app allows 
           <br />
+          for users to create new todos, sort them by timestamp or completion status and delete todos. 
           <br />
           {/* Check out the application:
           <IconButton>
@@ -165,14 +164,14 @@ export function WeatherDetails() {
           </IconButton> */}
           Check out the Github:
           <IconButton>
-            <a className={styles.icon} target="_blank" rel="noopener noreferrer" href="https://github.com/estherxin13/weather-app">
+            <a className={styles.icon} target="_blank" rel="noopener noreferrer" href="https://github.com/estherxin13/Todo-list">
               <GitHubIcon fontSize="large" />
             </a>
           </IconButton>
         </p>
       </div>
       <Card className={styles.card}>
-        <img className={styles.image} alt="logo" src="/weatherDetails.png" />
+        <img className={styles.image} alt="logo" src="/todoDetails.svg" />
       </Card>
     </>
   );
