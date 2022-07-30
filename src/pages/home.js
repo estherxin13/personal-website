@@ -121,7 +121,7 @@ export function Home() {
               <div>
                 <strong>1Password</strong>
                 <div className={classes.experienceText}>
-                  Working as a fullstack developer on the Single-Sign-On feature
+                  Working as a full-stack developer on the Single-Sign-On feature
                   set to release near September 2022.
                 </div>
               </div>
@@ -194,7 +194,7 @@ export function Home() {
       <div className={classes.text}>
         I'm currently two years into a five year Systems Design Engineering
         program. I get to learn about really awesome things and explore my
-        interests. Some memorable topics I'm learned about in the past two years
+        interests. Some memorable topics I've learned about in the past two years
         are:
         <br></br>
         <br></br>- what makes products fail

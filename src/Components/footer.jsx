@@ -66,7 +66,7 @@ export function Footer() {
           className={styles.link}
           target="_blank"
           rel="noopener noreferrer"
-          href="https://twitter.com/EstherXin4"
+          href="https://twitter.com/Estherxinn"
         >
           Twitter
         </a>
