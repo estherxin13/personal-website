@@ -30,12 +30,12 @@ const SideBar = ({ isOpen, toggle }) => {
           <SideBarMenu>
             <SideBarLink onClick={toggle}>
               <Link className={styles.link} to={"/"}>
-                home
+                work
               </Link>
             </SideBarLink>
             <SideBarLink onClick={toggle}>
               <Link className={styles.link} to={"/interests"}>
-                interests
+                about me
               </Link>
             </SideBarLink>
             <SideBarLink>

@@ -1,12 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import  Timeline  from "@material-ui/lab/Timeline";
-import TimelineItem from "@material-ui/lab/TimelineItem";
-import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
-import TimelineConnector from "@material-ui/lab/TimelineConnector";
-import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
-import TimelineDot from "@material-ui/lab/TimelineDot";
-import Typography from "@material-ui/core/Typography";
+import ExperienceTimeline from "../Components/experienceTimeline";
+
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -93,8 +88,8 @@ export function Home() {
         <strong>hi there, nice to meet you!</strong>
       </div>
       <div className={classes.subtitle}>
-        I'm Esther, a student at the University of Waterloo studying Systems
-        Design Engineering. I'm passionate about creating efficient systems, the
+        I'm Esther, a student at the <u>University of Waterloo</u> studying <u>Systems
+        Design Engineering</u>. I'm passionate about creating efficient systems, the
         future of education, women's sports and creating tech for good. Read
         more below!
         <br></br>
@@ -103,82 +98,7 @@ export function Home() {
       <div className={classes.sectionHeadings}>
         <strong>experience</strong>
       </div>
-      <Timeline className={classes.experienceTimeline}>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot></TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineOppositeContent>
-            <Typography
-              className={classes.experienceDate}
-              variant="body1"
-              color="textSecondary"
-            >
-              may 2022 - present
-            </Typography>
-            <div className={classes.experienceRoot}>
-              <div>
-                <strong>1Password</strong>
-                <div className={classes.experienceText}>
-                  Working as a full-stack developer on the Single-Sign-On feature
-                  set to release near September 2022.
-                </div>
-              </div>
-            </div>
-          </TimelineOppositeContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot></TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineOppositeContent>
-            <Typography
-              className={classes.experienceDate}
-              variant="body1"
-              color="textSecondary"
-            >
-              sep 2021 - dec 2021
-            </Typography>
-            <div className={classes.experienceRoot}>
-              <div>
-                <strong>1Password</strong>
-                <div className={classes.experienceText}>
-                  Worked as a backend developer on the Developer-Tooling team to
-                  create a new localization workflow used by 200+ internal
-                  developers.
-                </div>
-              </div>
-            </div>
-          </TimelineOppositeContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot></TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineOppositeContent>
-            <Typography
-              className={classes.experienceDate}
-              variant="body1"
-              color="textSecondary"
-            >
-              jan 2021 - apr 2021
-            </Typography>
-            <div className={classes.experienceRoot}>
-              <div>
-                <strong>Year Zero Studios</strong>
-                <div className={classes.experienceText}>
-                  Worked as a frontend developer and designer in a fast-based
-                  startup where I implemented numerous features from design to
-                  feature and created an intern onboarding program from scratch.
-                </div>
-              </div>
-            </div>
-          </TimelineOppositeContent>
-        </TimelineItem>
-      </Timeline>
+     <ExperienceTimeline />
       <div className={classes.sectionHeadings}>
         <strong>tools</strong>
       </div>

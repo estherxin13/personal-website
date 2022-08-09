@@ -49,12 +49,12 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             <NavItems>
               <Link className={styles.link} to={"/"}>
-                <Items className={styles.hover}>me</Items>
+                <Items className={styles.hover}>work</Items>
               </Link>
             </NavItems>
             <NavItems>
-              <Link className={styles.link} to={"/interests"}>
-                <Items className={styles.hover}>interests</Items>
+              <Link className={styles.link} to={"/about-me"}>
+                <Items className={styles.hover}>about me</Items>
               </Link>
             </NavItems>
             <NavItems>
