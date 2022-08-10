@@ -32,35 +32,35 @@ export function PhotoGallary() {
       <div className={classes.root}>
         <Grid container spacing={1}>
           <Grid item xs={4}>
-          <img className={classes.image} alt="logo" src="/cat.JPG" />
+          <img className={classes.image} alt="holding a kitten" src="/cat.jpg" />
           </Grid>
           <Grid item xs={4}>
-            <img className={classes.image} alt="logo" src="/toronto.JPG" />
+            <img className={classes.image} alt="CN tower" src="/toronto.jpg" />
           </Grid>
           <Grid item xs={4}>
-            <img className={classes.image} alt="logo" src="/hiking.JPG" />
+            <img className={classes.image} alt="hiking with sister" src="/hiking.jpg" />
           </Grid>
         </Grid>
         <Grid container spacing={1}>
           <Grid item xs={3}>
-            <img className={classes.image} alt="logo" src="/rainbow.JPG" />
+            <img className={classes.image} alt="rainbow" src="/rainbow.JPG" />
           </Grid>
           <Grid item xs={6}>
-            <img className={classes.image} alt="logo" src="/soccer.JPG" />
+            <img className={classes.image} alt="soccer team" src="/soccer.JPG" />
           </Grid>
           <Grid item xs={3}>
-            <img className={classes.image} alt="logo" src="/about.png" />
+            <img className={classes.image} alt="self portrait" src="/about.png" />
           </Grid>
         </Grid>
         <Grid container spacing={1}>
           <Grid item xs={6}>
-            <img className={classes.image} alt="logo" src="/concert.jpg" />
+            <img className={classes.image} alt="LANY concert" src="/concert.jpg" />
           </Grid>
           <Grid item xs={3}>
-            <img className={classes.image} alt="logo" src="/dog.JPG" />
+            <img className={classes.image} alt="puppy" src="/dog.JPG" />
           </Grid>
           <Grid item xs={3}>
-            <img className={classes.image} alt="logo" src="/art.jpg" />
+            <img className={classes.image} alt="watercolour painting" src="/art.jpg" />
           </Grid>
         </Grid>
       </div>
