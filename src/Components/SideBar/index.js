@@ -41,7 +41,7 @@ const SideBar = ({ isOpen, toggle }) => {
             <SideBarLink>
               <a
                 className={styles.link}
-                href="https://drive.google.com/file/d/10wj7lyNlm4WQBz9slUk7fSmh5gKmlNeh/view?usp=sharing"
+                href="/resume.pdf"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -60,7 +60,7 @@ const Navbar = ({ toggle }) => {
             <NavItems>
               <a
                 className={styles.link}
-                href="https://drive.google.com/file/d/1qvyC1nVCIHWWVfDlR_Dnd08haYPp8bH1/view?usp=sharing"
+                href="/resume.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
