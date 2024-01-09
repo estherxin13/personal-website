@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import  Timeline  from "@material-ui/lab/Timeline";
+import Timeline from "@material-ui/lab/Timeline";
 import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
 import TimelineConnector from "@material-ui/lab/TimelineConnector";
@@ -65,14 +65,65 @@ export function ExperienceTimeline() {
               variant="body1"
               color="textSecondary"
             >
-              may 2022 - present
+              sep 2023 - dec 2023
+            </Typography>
+            <div className={classes.experienceRoot}>
+              <div>
+                <strong>ODAIA</strong>
+                <div className={classes.experienceText}>
+                  Worked as a <u>full-stack engineer</u> at a fast-paced health
+                  tech startup. More to come!
+                </div>
+              </div>
+            </div>
+          </TimelineOppositeContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot></TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineOppositeContent>
+            <Typography
+              className={classes.experienceDate}
+              variant="body1"
+              color="textSecondary"
+            >
+              jan 2023 - apr 2023
+            </Typography>
+            <div className={classes.experienceRoot}>
+              <div>
+                <strong>League</strong>
+                <div className={classes.experienceText}>
+                  Worked as a <u>cloud platform engineer</u> that managed a
+                  distributed Kubernetes cluster in 10+ production and test
+                  environments while implementing a CI/CD pipeline using
+                  CircleCI and Concourse to deploy large-scale applications
+                </div>
+              </div>
+            </div>
+          </TimelineOppositeContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot></TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineOppositeContent>
+            <Typography
+              className={classes.experienceDate}
+              variant="body1"
+              color="textSecondary"
+            >
+              may 2022 - aug 2022
             </Typography>
             <div className={classes.experienceRoot}>
               <div>
                 <strong>1Password</strong>
                 <div className={classes.experienceText}>
-                  Working as a <u>full-stack developer</u> on the Single-Sign-On feature
-                  set to release near September 2022.
+                  Worked as a <u>full-stack engineer</u> on the
+                  Single-Sign-On feature and corresponding admin tool for
+                  business clients.
                 </div>
               </div>
             </div>
@@ -95,9 +146,9 @@ export function ExperienceTimeline() {
               <div>
                 <strong>1Password</strong>
                 <div className={classes.experienceText}>
-                  Worked as a <u>backend developer</u> on the Developer-Tooling team to
-                  create a new localization workflow used by 200+ internal
-                  developers.
+                  Worked as a <u>backend engineer</u> on the
+                  Developer-Tooling team to create a new localization workflow
+                  used by 200+ internal developers.
                 </div>
               </div>
             </div>
@@ -120,9 +171,10 @@ export function ExperienceTimeline() {
               <div>
                 <strong>Year Zero Studios</strong>
                 <div className={classes.experienceText}>
-                  Worked as a <u>frontend developer</u> and designer in a fast-based
-                  startup where I implemented numerous features from design to
-                  release and created an intern onboarding program from scratch.
+                  Worked as a <u>full-stack engineer</u> and designer
+                  in a fast-based startup where I implemented numerous features
+                  from design to release and created an intern onboarding
+                  program from scratch.
                 </div>
               </div>
             </div>
