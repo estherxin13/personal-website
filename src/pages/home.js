@@ -103,10 +103,11 @@ export function Home() {
         <strong>tools</strong>
       </div>
       <div className={classes.text}>
-        Languages — Go, Java, Python, C++, JavaScript, TypeScript, HTML/CSS
+        Languages — GoLang, Python, Java, C++, SQL, JavaScript, TypeScript
         <br></br>
-        Tools / Frameworks — React, Express, GitLab CI/CD, Firebase, Vercel,
-        Jira, Git, Figma
+        Frameworks — React, FastAPI, Node.js, Express.js, REST
+        <br></br>
+        Tools — AWS, MongoDB, GCP, DynamoDB, Redis, Kubernetes, Docker, Terraform, CI/CD, Ansible, Prometheus/Grafana, Git
       </div>
       <div className={classes.sectionHeadings}>
         <strong>education</strong>
